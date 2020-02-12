@@ -1,0 +1,2 @@
+
+let alphabet = 'abcdefghijklmnopqrstuvqxyz'.split('');
