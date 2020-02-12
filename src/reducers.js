@@ -4,7 +4,7 @@ let theAlphabet = 'abcdefghijklmnopqrstuvqxyz'.split('');
 
 let currentState = {
     alphabet: theAlphabet,
-    currentIndex: 12
+    currentIndex: 25
 }
 
 export function alphabet(state=currentState, action) {
@@ -12,10 +12,12 @@ export function alphabet(state=currentState, action) {
 
     switch(action.type) {
         case INCREMENT:
-            newState.currentIndex += 1;
+            // newState.currentIndex += 1;
+            newState.currentIndex = (newState.currentIndex > 24) ? 0 : newState.currentIndex +1;
             break;
         case DECREMENT:
-            newState.currentIndex -= 1;
+            // newState.currentIndex -= 1;
+            newState.currentIndex = (newState.currentIndex < 1) ? 25 : newState.currentIndex -1;
             break;
         case RESET:
             newState.currentIndex = 12;
