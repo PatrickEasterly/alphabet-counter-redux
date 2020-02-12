@@ -5,7 +5,9 @@ export default function AlphabetCounter({
     currentIndex,
     handleIncrement,
     handleDecrement,
-    handleReset
+    handleReset,
+    handleTest,
+    testNum
 }) {
     return (
         <div>

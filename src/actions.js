@@ -2,6 +2,7 @@
 export const INCREMENT = 'INCREMENT';
 export const DECREMENT = 'DECREMENT';
 export const RESET = 'RESET';
+export const ADD_BUTTON = 'ADD_BUTTON';
 
 // Actions
 export function actionIncrement() {
@@ -19,5 +20,11 @@ export function actionDecrement() {
 export function actionReset() {
     return ({
         type: RESET
+    })
+}
+
+export function actionAddButton() {
+    return ({
+        type: ADD_BUTTON
     })
 }
