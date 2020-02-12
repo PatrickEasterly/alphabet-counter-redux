@@ -1,14 +1,14 @@
 import { INCREMENT, DECREMENT, RESET } from "./actions";
 
-let alphabet = 'abcdefghijklmnopqrstuvqxyz'.split('');
+let theAlphabet = 'abcdefghijklmnopqrstuvqxyz'.split('');
 
 let currentState = {
-    alphabet,
+    alphabet: theAlphabet,
     currentIndex: 12
 }
 
 export function alphabet(state=currentState, action) {
-    let newState = state;
+    let newState = {...state};
 
     switch(action.type) {
         case INCREMENT:
